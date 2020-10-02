@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section>
+      <header>
+        <img class="logo" src="dvsdf@4x.png" alt="adsd" />
+        <div class="toggle"></div>
+      </header>
+      <img class="bg" src="bg.svg" alt="das" />
+      <img class="teju" src="Asset 2@4x.png" alt="das" />
+      <div class="content">
+        <h2>
+          तेज रफ्तार तेजस्वी सरकार
+          <br />
+
+          <span
+            class="txt-type"
+            data-wait="2000"
+            data-words='["RJD", "रा.ज.द."]'
+          ></span>
+        </h2>
+        <p>
+          देश के गुस्से को हवा मत दो योगी जी, वैसे भी चारो तरफ थू-थू हो रही है
+          आपकी! गुंडागर्दी, तानाशाही और बेशर्मी की हद पार करती आतंकी भाजपाई
+          सरकार को देश की जनता बर्दाश्त नहीं करेगी। शोकाकुल दलित परिवार से मिलने
+          जा रहे Rahul Gandhi जी के साथ हुए शर्मनाक बर्ताव की कड़ी निंदा करता
+          हूँ।रू
+        </p>
+        <a class="btn third" href="#">Join us</a>
+      </div>
+      <ul class="sci" style="position: fixed">
+        <li>
+          <a href=""><img src="facebook.png" alt="sad" /></a>
+        </li>
+        <li>
+          <a href=""><img src="twitter.png" alt="sad" /></a>
+        </li>
+        <li>
+          <a href=""><img src="instagram.png" alt="asd" /></a>
+        </li>
+      </ul>
+      <div class="textblocks">
+        <div class="blocks">
+          <h3>rajad</h3>
+          देश के गुस्से को हवा मत दो योगी जी, वैसे भी चारो तरफ थू-थू हो रही है
+          आपकी!
+        </div>
+        <div class="blocks">
+          <h3>TejPratap Yadav</h3>
+          Elected Representative of Mahua Vidhansabha (Bihar) Ex. Health
+          Minister, Minor Water Resource Minister, Environment & Forest Minister
+          Of Bihar
+        </div>
+      </div>
+    </section>
+    <section>
+      <img class="parr" src="bg-parr.jpeg" alt="" />
+    </section>
+    <script type="text/javascript">
+      document.addEventListener('mousemove', function (e) {
+        const bg = document.querySelector('.bg');
+        const teju = document.querySelector('.teju');
+        const content = document.querySelector('.content');
+        bg.style.width = 100 + e.pageX / 100 + '%';
+        bg.style.height = 100 + e.pageY / 100 + '%';
+        teju.style.right = -450 + e.pageX / 2 + 'px';
+        content.style.opacity = e.pageX / 150.5;
+        content.style.left = 100 + e.pageX / 2.5 + 'px';
+      });
+
+      window.addEventListener('scroll', function () {
+        const bg = document.querySelector('.bg');
+        const teju = document.querySelector('.teju');
+        const content = document.querySelector('.content');
+        var value = window.scrollY;
+        console.log(value);
+        bg.style.top = value + 0.5 + 'px';
+      });
+    </script>
+    <script src="typewriter.js"></script>
+  </body>
+</html>
