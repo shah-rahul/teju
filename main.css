@@ -354,7 +354,7 @@ section .parr {
 @media (max-width: 726px) {
 
   .logo{
-    right: -3em;
+    right: -2em;
   }
   .blocks {
     display: none;
@@ -371,7 +371,7 @@ section .parr {
 
   .txt-type{
     text-align: center;
-    font-size: 1em !important;
+    font-size: 0.75em !important;
   }
   .teju {
     display: none;
