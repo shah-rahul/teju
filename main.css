@@ -405,16 +405,25 @@ section .parr {
     margin: 40px 0 100px; 
   }
   
-  .vision{
-    width:100%;
+  .rod.circle1 {
+    display: none;
   }
-  
-  .rod.circle1{
-    display: none
+  .rod.cirlce2 {
+    margin: 0;
+    width: 10em;
+    height: 10em;
   }
-  
-  .rod.circle2{
-    height: 70px;
-    width:70px
+
+  .vision {
+    padding: 0;
+    margin: 0;
+  }
+  .title-3 {
+    font-size: 3em !important;
+    text-align: left !important;
+  }
+  .text-3 {
+    max-width: 40vh;
+    max-height: 100vw;
   }
 }
