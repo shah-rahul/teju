@@ -32,7 +32,7 @@ section header {
   z-index: 10;
 }
 
-.custom{
+.custom {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -121,8 +121,7 @@ section header .toggle {
 }
 
 .sci {
-  
-  position:absolute;
+  position: absolute;
   top: 50%;
   right: 0%;
   transform: translateY(-50%);
@@ -212,151 +211,178 @@ section .parr {
   box-shadow: 4px 4px 8px green;
 }
 
+/*Vedio Background css*/
 
-  /*Vedio Background css*/
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 
-  .banner{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-    padding: 0 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+.banner:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  pointer-events: none;
+}
 
-  .banner:before{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 400px;
-    height: 100%;
-    background: rgba(0,0,0,0.2);
-  } 
-  .banner video 
-  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.1;
-    pointer-events: none;
-  }
+.banner .parr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  pointer-events: none;
+}
+.banner .textBox {
+  position: relative;
+  max-width: 750px;
+  z-index: 2;
+}
+.banner .textBox h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+.banner .textBox p {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 5px 0 25px;
+}
 
-   .banner .parr
-  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.1;
-    pointer-events: none;
-  }
-  .banner .textBox{
-    position: relative;
-    max-width: 750px;
-    z-index: 2;
-  }
-  .banner .textBox h2{
-    color: #fff;
-    font-size: 3rem;
+.banner .textBox a {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  color: #111;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
 
-  }
-  .banner .textBox p{
-    color: #fff;
-    font-size: 1.1em;
-    margin: 5px 0 25px;
-  }
+.banner .videoBx {
+  position: relative;
+  background: #fff;
+  margin-left: 40px;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
 
-  .banner .textBox a {
-    position: relative;
-    display: inline-block;
-    background: #fff;
-    color: #111;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-  }
+.banner .videoBx video {
+  opacity: 1;
+}
 
-  .banner .videoBx
-  {
-    position: relative;
-    background: #fff;
-    margin-left: 40px;
-    width: 100%;
-    height: 400px;
-    z-index: 1;
-  }
+/*vision section*/
 
-  .banner .videoBx video{
-    opacity: 1;
-  }
+.vision {
+  position: relative;
+  width: 100%;
+  padding: 50px;
+}
+.rod {
+  position: relative;
+  overflow: hidden;
+}
 
+.rod img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  /*vision section*/
+.rod.circle1 {
+  width: 500px;
+  height: 500px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+}
 
- .vision
-  {
-    position: relative;
-    width: 100%;
-    padding: 50px;
-  }
-  .rod
-  {
-    position: relative;
-    overflow: hidden;
-  }
+.rod.cirlce2 {
+  width: 300px;
+  height: 300px;
+  float: right;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+}
 
-  .rod img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
- .rod.circle1{
-    width: 500px;
-    height: 500px;
-    float: left;
-    border-radius:50%;
-    margin: 20px;
-      shape-outside: circle();
-  }
-
-  .rod.cirlce2{
-    width: 300px;
-    height: 300px;
-    float: right;
-    border-radius: 50%;
-    margin: 20px;
-    shape-outside: circle();
-  }
-
-  .vision h2{
-    color: #fff;
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  .vision p {
-    color: #fff;
-  }
-
+.vision h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.vision p {
+  color: #fff;
+}
 
 /*footer*/
-.footer{
+.footer {
   height: 200px;
   width: 100vw;
   background: #fff;
   text-align: center;
+}
+
+@media (max-width: 726px) {
+
+  .logo{
+    right: -3em;
+  }
+  .blocks {
+    display: none;
+  }
+  .content {
+    position: absolute;
+    top: 9em;
+    left: 1em !important;
+  }
+  .title{
+    
+    font-size: 2.5em !important;
+  }
+
+  .txt-type{
+    text-align: center;
+    font-size: 1em !important;
+  }
+  .teju {
+    display: none;
+  }
+  .text-1 {
+    display: none;
+  }
+  .btn {
+    width: 9em;
+    position: fixed;
+    top: 87vh;
+    right: 9em;
+  }
 }
