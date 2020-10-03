@@ -404,4 +404,17 @@ section .parr {
     height: 200px;
     margin: 40px 0 100px; 
   }
+  
+  .vision{
+    width:100%;
+  }
+  
+  .rod.circle1{
+    display: none
+  }
+  
+  .rod.circle2{
+    height: 70px;
+    width:70px
+  }
 }
