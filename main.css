@@ -382,7 +382,7 @@ section .parr {
   .btn {
     width: 9em;
     position: fixed;
-    top: 80vh;
+    top: 85vh;
     right: 30%;
   }
 }
